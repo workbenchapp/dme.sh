@@ -1,0 +1,21 @@
+
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+body {
+        background-image: url(../images/icon.svg);
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-position: bottom -10% left -5%;
+        background-color: darkslategray;
+}
+
+/* glass */
+.PageContent {
+    min-height: 100%;
+    background-color: rgba(255, 255, 255, .25);  
+    backdrop-filter: blur(20px);
+   }
