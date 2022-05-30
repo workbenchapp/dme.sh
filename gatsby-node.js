@@ -5,7 +5,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     // https://joseph.to/web3js-on-gatsby/
     plugins: [
         new webpack.ProvidePlugin({
-            Buffer: [require.resolve("buffer/"), "Buffer"],
+            Buffer: [require.resolve("buffer"), "Buffer"],
         }),
     ],
      resolve: {
