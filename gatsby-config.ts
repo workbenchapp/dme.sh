@@ -23,14 +23,7 @@ const config: GatsbyConfig = {
     options: {
       "icon": "src/images/icon.jpg"
     }
-  }, "gatsby-plugin-mdx", {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "images",
-        "path": "./src/images/"
-      },
-      __key: "images"
-    }, {
+  }, {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "pages",
