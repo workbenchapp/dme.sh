@@ -11,18 +11,8 @@ const headingStyles = {
   marginBottom: 64,
   maxWidth: 320,
 }
-const headingAccentStyles = {
-  color: "#663399",
-}
 const paragraphStyles = {
   marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
 }
 const listStyles = {
   marginBottom: 96,
@@ -72,7 +62,7 @@ const badgeStyle = {
   borderRadius: 4,
   padding: "4px 6px",
   display: "inline-block",
-  position: "relative" as "relative",
+  position: "relative" as const,
   top: -2,
   marginLeft: 10,
   lineHeight: 1,
@@ -95,11 +85,11 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-	DMe.sh
+        DMe.sh
       </h1>
       <p style={paragraphStyles}>
-	Playground for Solana DAPP experiments - 
-	Gotta start somewhere
+        Playground for Solana DAPP experiments -
+        Gotta start somewhere
       </p>
       <ul style={listStyles}>
         <li style={docLinkStyle}>

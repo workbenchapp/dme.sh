@@ -4,15 +4,17 @@ import Header from "../components/Header"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/index.css';
-import iconsvg from '../images/icon.svg'
 
-export default ({ children }) => (
+// eslint-disable-next-line react/prop-types
+const Layout = ({ children }) => (
     <div>
         <Header />
         <div className="container">
-        <div className="PageContent">
-        {children}
-        </div>
+            <div className="PageContent">
+                {children}
+            </div>
         </div>
     </div>
 )
+
+export default Layout;
