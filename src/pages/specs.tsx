@@ -42,7 +42,8 @@ const SpecsPage = () => {
 
   React.useEffect(() => {
     fetch(
-      "https://raw.githubusercontent.com/ptrdin/templates/ptrdin/templates-2.0.json"
+      "https://raw.githubusercontent.com/brod-intel/cfa-demo/master/templateUX.json"
+      //"https://raw.githubusercontent.com/ptrdin/templates/ptrdin/templates-2.0.json"
     )
       .then((res) => res.json())
       .then(
