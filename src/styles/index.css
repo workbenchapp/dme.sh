@@ -18,17 +18,17 @@ body {
 /* glass */
 .PageContent {
   padding: 24px;
-  bottom: 70px;
+  bottom: 48px;
   position: fixed;
   top: 20px;
-  height: 100%;
   left: 20px;
   right: 20px;
-  min-height: 100%;
+  overflow: scroll;
 
-  min-height: 100%;
   background-color: rgba(255, 255, 255, .75);
+}
 
+.glass {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 4px;
@@ -45,4 +45,15 @@ h4,
 h5,
 h6 {
   color: white;
+}
+
+.wallOfText {
+  align-content: center;
+  display: grid;
+  padding: 12px;
+
+  padding: 12px;
+
+  padding-left: 20%;
+  padding-right: 20%;
 }

@@ -1,8 +1,9 @@
 import * as React from "react";
-import DMeshIndex from "./dmeshIndex";
+import DaonetesIndexPage from "./DaonetesIndex";
+//import DMeshIndex from "./dmeshIndex";
 
 const IndexPage = () => {
-  return <DMeshIndex />;
+  return <DaonetesIndexPage />;
 };
 
 export default IndexPage;

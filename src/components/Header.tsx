@@ -12,7 +12,7 @@ function Header() {
   return (
     <Navbar fixed="bottom" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">DMe.sh</Navbar.Brand>
+        <Navbar.Brand href="/">DAOnetes</Navbar.Brand>
         <WalletMultiButton />
       </Container>
     </Navbar>

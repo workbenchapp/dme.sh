@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
         <WalletModalProvider>
           <Header />
           <div className="container">
-            <div className="PageContent">{children}</div>
+            <div className="PageContent glass">{children}</div>
           </div>
         </WalletModalProvider>
       </WalletProvider>
