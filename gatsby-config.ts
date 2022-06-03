@@ -1,6 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 
-const path = require("path");
+import path from "path";
 // Get paths of Gatsby's required rules, which as of writing is located at:
 // https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
 // gatsby/src/utils/eslint-rules
@@ -15,21 +15,27 @@ const gatsbyRequiredRules = path.join(
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `dme.sh`,
-    siteUrl: `https://dme.sh`
+    title: `DMe.sh`,
+    siteUrl: `https://dme.sh`,
   },
-  plugins: ["gatsby-plugin-layout", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.jpg"
-    }
-  }, {
-      resolve: 'gatsby-source-filesystem',
+  plugins: [
+    "gatsby-plugin-layout",
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
       options: {
-        "name": "pages",
-        "path": "./src/pages/"
+        icon: "src/images/icon.jpg",
       },
-      __key: "pages"
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
     },
     {
       resolve: "gatsby-plugin-eslint",
@@ -44,7 +50,7 @@ const config: GatsbyConfig = {
         // ...
       },
     },
-  ]
+  ],
 };
 
 export default config;
