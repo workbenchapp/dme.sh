@@ -15,6 +15,7 @@ const paragraphStyles = {
   marginBottom: 48,
 };
 const listStyles = {
+  listStyleType: "none",
   marginBottom: 96,
   paddingLeft: 0,
 };
@@ -26,7 +27,7 @@ const listItemStyles = {
 };
 
 const linkStyle = {
-  color: "#8954A8",
+  color: "white",
   fontWeight: "bold",
   fontSize: 16,
   verticalAlign: "5%",
@@ -74,7 +75,13 @@ const links = [
     text: "Solana Name service",
     url: "/names/",
     description: "Lets see what Solana Domains we have, and how they work.",
-    color: "#E95800",
+    //color: "#E95800",
+  },
+  {
+    text: "Crypto Workbench",
+    url: "https://cryptoworkbench.io/",
+    description: "We're working on decentralised compute.",
+    //color: "#8954A8",
   },
 ];
 
@@ -82,27 +89,19 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>DMe.sh Home Page</title>
       <h1 style={headingStyles}>DMe.sh</h1>
       <p style={paragraphStyles}>
         Playground for Solana DAPP experiments - Gotta start somewhere
       </p>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=ts-docs&utm_campaign=minimal-starter-ts`}
-          >
-            {docLink.text}
-          </a>
-        </li>
         {links.map((link) => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+          <li
+            key={link.url}
+            style={{ ...listItemStyles, color: link.color || "white" }}
+          >
             <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}
-              >
+              <a style={linkStyle} href={`${link.url}`}>
                 {link.text}
               </a>
               {link.badge && (

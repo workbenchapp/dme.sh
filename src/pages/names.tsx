@@ -40,7 +40,7 @@ const NamesPage = () => {
 
   return (
     <Container>
-      <Heading>
+      <h1>
         Name service accounts{" "}
         <Button
           disabled={buttonUsed}
@@ -78,9 +78,9 @@ const NamesPage = () => {
           }}
         >
           Request accounts
-          {waitingForRequest ? <Spinner animation="border" /> : ""}
+          {waitingForRequest ? <Spinner size="sm" animation="border" /> : ""}
         </Button>
-      </Heading>
+      </h1>
       <CardGroup>
         {accounts.slice(0, 4).map((account: ProgramAccount) => {
           return (

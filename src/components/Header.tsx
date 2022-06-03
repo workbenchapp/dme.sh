@@ -12,7 +12,7 @@ function Header() {
   return (
     <Navbar fixed="bottom" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">DMe.sh</Navbar.Brand>
+        <Navbar.Brand href="/#home">DMe.sh</Navbar.Brand>
         <WalletMultiButton />
         <WalletDisconnectButton />
       </Container>
