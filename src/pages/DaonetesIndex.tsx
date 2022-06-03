@@ -12,7 +12,8 @@ const DaonetesIndexPage = () => {
     <Container>
       <h1>DAOnetes</h1>
       <div className="wallOfText">
-        Nathan LeClaire and Sven Dowideit foundered of Crypto Workbench in 2022.
+        Nathan LeClaire and Sven Dowideit founded Crypto Workbench in 2022
+        to build an ad-hoc distributed computing solution - DAOnetes.
         We met working at Docker in 2014 and bonded over our passion for
         unlocking computing’s “bicycle for the mind”. We’re both systems nerds
         with a blend of technical and customer facing experience.
@@ -53,9 +54,8 @@ const DaonetesIndexPage = () => {
           <Col></Col>
         </Row>
         Docker’s dream was to make a programmable internet - a global
-        supercomputer. Unfortunately, there were some limitations that caused us
-        to never quite get there, and the industry landed on centralized
-        solutions like Kubernetes.
+        supercomputer. Unfortunately, we're not there yet, and for now,
+        the industry landed on centralized solutions like Kubernetes.
       </div>
       <div className="wallOfText">
         <h2>Building Decentralized Supercomputers</h2>
@@ -69,7 +69,7 @@ const DaonetesIndexPage = () => {
         was impossible without a centralized service.
       </div>
       <div className="wallOfText">
-        We think crypto can roll the ball forward on these issues. Things like
+        We think web3 can roll the ball forward on these issues. Things like
         identity, auditability, and payments are built right in. Likewise, it’s
         a shared data store in the sky — so computers can discover each other
         and share information without having to trust some SaaS service.
