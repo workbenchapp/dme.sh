@@ -14,7 +14,6 @@ function Header() {
       <Container>
         <Navbar.Brand href="/">DMe.sh</Navbar.Brand>
         <WalletMultiButton />
-        <WalletDisconnectButton />
       </Container>
     </Navbar>
   );
