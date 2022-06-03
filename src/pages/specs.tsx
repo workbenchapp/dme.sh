@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Row, Col, Container, Spinner, Button } from "react-bootstrap";
-import { Heading } from "theme-ui";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 
@@ -27,8 +26,8 @@ const SpecCard = (props: { item: Spec }) => {
         </Card.Text>
       </Card.Body>
       <Card.Footer>
+        <Button>Deploy</Button> :
         <small className="text-muted">Not deployed</small>
-        <Button>Deploy</Button>
       </Card.Footer>
     </Card>
   );
@@ -69,7 +68,7 @@ const SpecsPage = () => {
   });
   return (
     <Container>
-      <Heading>Spec list</Heading>
+      <h1>Spec list</h1>
       <Row>
         <Col>
           <Row xs={1} md={3} className="g-4">

@@ -12,7 +12,6 @@ import {
   Modal,
   Row,
 } from "react-bootstrap";
-import { Heading } from "theme-ui";
 
 const DaonetesPage = () => {
   const [show, setShow] = React.useState(false);
@@ -27,10 +26,10 @@ const DaonetesPage = () => {
 
   return (
     <Container>
-      <Heading>
+      <h1>
         DAOnetes (Dao name / selector if the wallet account is in more than one
         DAO)
-      </Heading>
+      </h1>
       <Row>
         <Col>
           <ButtonToolbar
