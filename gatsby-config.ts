@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
     title: `dme.sh`,
     siteUrl: `https://dme.sh`
   },
-  plugins: ["gatsby-plugin-layout", "gatsby-plugin-theme-ui", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-layout", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.jpg"

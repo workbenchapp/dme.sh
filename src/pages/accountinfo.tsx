@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Row, Col, Container, Spinner } from "react-bootstrap";
-import { Heading } from "theme-ui";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 
@@ -13,7 +12,7 @@ const AccountInfoPage = () => {
 
   return (
     <Container>
-      <Heading>Account info for {publicKey?.toString()}</Heading>
+      <h1>Account info for {publicKey?.toString()}</h1>
       <Row>
         <Col>
           <Row xs={1} md={1} className="g-4">

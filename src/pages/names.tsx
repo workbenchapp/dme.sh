@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Container, Spinner } from "react-bootstrap";
-import { Heading } from "theme-ui";
 import CardGroup from "react-bootstrap/CardGroup";
 import * as web3 from "@solana/web3.js";
 import * as splNameService from "@solana/spl-name-service";
